@@ -15,7 +15,7 @@ class Model(BaseModel):
     def infer(self, input_image_path,  *args, **kwargs):
 
         result_image_path = self._fileManager.create_empty_file(file_extension=".png").name
-        print("input_image_path", input_image_path[0])
+        # print("input_image_path", input_image_path[0])
 
         # Load and preprocess the input image
         input_image = cv2.imread(input_image_path[0])
@@ -35,11 +35,7 @@ class Model(BaseModel):
 
         binary_seg_uint8 = (binary_seg * 225).astype(np.uint8)
         result = cv2.imwrite(result_image_path, binary_seg_uint8)
-
-        print("result_image_path", result_image_path)
         instance_seg = torch.argmax(instance_logits, dim=1).squeeze().numpy()
-        
-        print("binary_seg", str(result))
 
         return InferenceOutput(outputFilePath=result_image_path, metadata={})
             
