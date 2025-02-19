@@ -1,0 +1,22 @@
+{
+    "name": "Road Lane Detection (Image)",
+    "modelFilesSchema": 
+      {
+        "description": "Select .pth weights file",
+        "accept": [".pth", ".py"],
+        "minimum": 1,
+        "maximum": 1
+      }
+    ,
+    "inputFilesSchema": [
+      {
+        "type": "image",
+        "description": "Select image",
+        "accept": ["image/*"]
+      }
+    ]
+    ,
+    "argumentsSchema": { 
+    }
+  }
+  

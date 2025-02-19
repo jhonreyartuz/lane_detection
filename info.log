@@ -1,0 +1,96 @@
+2024-12-10 17:15:52,093 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:19:02,938 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:19:19,746 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:20:24,394 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:21:13,553 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:21:54,848 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:24:28,841 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:24:53,295 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:27:24,901 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:33:14,380 - inference_worker.core.logging - ERROR - example
+2025-01-09 10:33:19,146 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.4.0b0 connecting to ('::1', 5672, 0, 0)
+2025-01-09 10:33:19,148 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=4756, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 62267, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-01-09 10:33:19,149 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2025-01-09 10:33:19,201 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-01-09 10:33:19,202 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-01-09 10:33:19,204 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2025-01-09 10:33:19,204 - pika.adapters.blocking_connection - INFO - Created channel=1
+2025-01-09 10:33:19,224 - root - INFO - Listening for system messages...
+2025-01-09 10:34:14,268 - root - INFO - Cancelling work...
+2025-01-09 10:34:14,270 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2025-01-09 10:34:14,273 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000298A2F85300> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2025-01-09 10:34:14,274 - root - INFO - Channel closed
+2025-01-09 10:34:14,275 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2025-01-09 10:34:14,276 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2025-01-09 10:34:14,278 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=4756, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 62267, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-01-09 10:34:14,280 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=4756, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 62267, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-01-09 10:34:14,280 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=4756, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 62267, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-01-09 10:34:14,283 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-01-09 10:34:14,283 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2025-01-09 10:34:14,284 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=4756, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 62267, 0, 0), raddr=('::1', 5672, 0, 0)>
+2025-01-09 10:34:14,286 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2025-01-09 10:34:14,286 - root - INFO - Connection closed
+2025-01-09 10:34:14,287 - root - INFO - Keyboard interrupt detected
+2025-01-09 10:34:14,287 - root - INFO - Cancelling work...
+2025-01-09 10:34:33,847 - inference_worker.core.logging - ERROR - example
+2025-02-12 15:53:26,860 - inference_worker.core.logging - ERROR - example
+2025-02-12 16:00:09,975 - inference_worker.logging - ERROR - example
+2025-02-12 16:05:28,729 - inference_worker.logging - ERROR - example
+2025-02-12 16:06:26,705 - inference_worker.logging - ERROR - example
+2025-02-12 16:07:09,223 - inference_worker.logging - ERROR - example
+2025-02-12 16:08:42,096 - inference_worker.workflow - ERROR - None
+2025-02-12 16:30:30,178 - inference_worker.logging - ERROR - example
+2025-02-12 16:31:03,912 - inference_worker.workflow - ERROR - None
+2025-02-12 16:53:09,125 - inference_worker.logging - ERROR - example
+2025-02-12 17:11:27,190 - inference_worker.logging - ERROR - example
+2025-02-12 17:11:44,547 - inference_worker.logging - ERROR - example
+2025-02-12 17:12:05,584 - inference_worker.workflow - ERROR - None
+2025-02-12 17:19:15,633 - inference_worker.logging - ERROR - example
+2025-02-12 17:20:14,556 - inference_worker.logging - ERROR - example
+2025-02-12 17:20:43,234 - inference_worker.logging - ERROR - example
+2025-02-12 17:21:19,965 - inference_worker.logging - ERROR - example
+2025-02-12 17:21:41,208 - inference_worker.logging - ERROR - example
+2025-02-12 17:22:28,580 - inference_worker.logging - ERROR - example
+2025-02-12 17:23:50,502 - inference_worker.logging - ERROR - example
+2025-02-19 09:43:25,674 - inference_worker.logging - ERROR - example
+2025-02-19 09:44:35,126 - inference_worker.logging - ERROR - example
+2025-02-19 09:45:19,786 - inference_worker.workflow - ERROR - None
+2025-02-19 09:49:47,217 - inference_worker.logging - ERROR - example
+2025-02-19 09:51:15,459 - inference_worker.dev.worker - ERROR - 
+2025-02-19 09:51:16,478 - inference_worker.dev.worker - ERROR - 
+2025-02-19 09:51:29,317 - inference_worker.workflow - ERROR - None
+2025-02-19 09:57:17,096 - inference_worker.logging - ERROR - example
+2025-02-19 09:57:26,732 - inference_worker.dev.worker - ERROR - 
+2025-02-19 09:57:27,749 - inference_worker.dev.worker - ERROR - 
+2025-02-19 09:57:37,776 - inference_worker.workflow - ERROR - None
+2025-02-19 10:05:07,475 - inference_worker.logging - ERROR - example
+2025-02-19 10:05:23,138 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:05:24,150 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:05:34,468 - inference_worker.workflow - ERROR - None
+2025-02-19 10:07:44,851 - inference_worker.workflow - ERROR - None
+2025-02-19 10:11:05,027 - inference_worker.logging - ERROR - example
+2025-02-19 10:11:42,839 - inference_worker.workflow - ERROR - None
+2025-02-19 10:12:58,947 - inference_worker.workflow - ERROR - None
+2025-02-19 10:14:27,518 - inference_worker.logging - ERROR - example
+2025-02-19 10:14:32,939 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:14:34,955 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:14:38,966 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:14:50,761 - inference_worker.workflow - ERROR - None
+2025-02-19 10:19:19,235 - inference_worker.logging - ERROR - example
+2025-02-19 10:19:29,344 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:19:30,356 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:24:16,912 - inference_worker.logging - ERROR - example
+2025-02-19 10:29:04,934 - inference_worker.logging - ERROR - example
+2025-02-19 10:29:09,873 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:29:10,888 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:29:12,913 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:41:38,081 - inference_worker.logging - ERROR - example
+2025-02-19 10:42:47,505 - inference_worker.logging - ERROR - example
+2025-02-19 10:42:52,490 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:44:20,116 - inference_worker.logging - ERROR - example
+2025-02-19 10:44:50,079 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:44:51,097 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:45:02,505 - inference_worker.workflow - ERROR - None
+2025-02-19 10:46:00,443 - inference_worker.logging - ERROR - example
+2025-02-19 10:46:48,475 - inference_worker.dev.worker - ERROR - 
+2025-02-19 10:46:49,498 - inference_worker.dev.worker - ERROR - 
